@@ -16,6 +16,7 @@ function getEven(arr) {
    return(res);
 
 
+   
 }
 
 function multiplyByN(arr, n) {
