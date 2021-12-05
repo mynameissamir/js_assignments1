@@ -6,9 +6,13 @@ const todolist = document.getElementsByClassName('todos')[0];
 function additem(){
     var para = document.createElement("p");
     para.setAttribute("key",data);
+    
     var input1=newTodoInput.value;
+    
     para.innerHTML=input1;
+
     todolist.appendChild(para);
+    
     data=data+1;
     para.onclick = function() {
         para.remove();
