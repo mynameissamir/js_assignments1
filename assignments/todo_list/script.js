@@ -10,13 +10,13 @@ async function getText() {
     const api_url = "https://jsonplaceholder.typicode.com/todos";
 
   let x = await fetch(api_url);
+  
   return await x.json();
   //let y = await x.text();
   //console.log(y);
 }
 async function renderUsers() {
-    
-    
+
     let users = await getText();
     users.forEach(user => {
         var para = document.createElement("p");
